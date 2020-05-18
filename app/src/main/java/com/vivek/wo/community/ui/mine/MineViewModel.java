@@ -1,16 +1,16 @@
-package com.vivek.wo.community.ui.notifications;
+package com.vivek.wo.community.ui.mine;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class NotificationsViewModel extends ViewModel {
+public class MineViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public NotificationsViewModel() {
+    public MineViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is notifications fragment");
+        mText.setValue("This is mine fragment");
     }
 
     public LiveData<String> getText() {

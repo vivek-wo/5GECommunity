@@ -1,16 +1,16 @@
-package com.vivek.wo.community.ui.dashboard;
+package com.vivek.wo.community.ui.discovery;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class DashboardViewModel extends ViewModel {
+public class DiscoveryViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public DashboardViewModel() {
+    public DiscoveryViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
+        mText.setValue("This is discovery fragment");
     }
 
     public LiveData<String> getText() {

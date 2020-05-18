@@ -1,4 +1,4 @@
-package com.vivek.wo.community.ui.notifications;
+package com.vivek.wo.community.ui.discovery;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.vivek.wo.community.R;
 
-public class NotificationsFragment extends Fragment {
+public class DiscoveryFragment extends Fragment {
 
-    private NotificationsViewModel notificationsViewModel;
+    private DiscoveryViewModel discoveryViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        notificationsViewModel =
-                ViewModelProviders.of(this).get(NotificationsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_notifications, container, false);
+        discoveryViewModel =
+                ViewModelProviders.of(this).get(DiscoveryViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_discovery, container, false);
         final TextView textView = root.findViewById(R.id.text_notifications);
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        discoveryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
