@@ -8,4 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="HomeTabStyle" parent="Widget.Design.TabLayout">
+        <item name="android:textColor">@color/colorHalfTWhite</item>
+        <item name="tabSelectedTextColor">@color/colorWhite</item>
+        <item name="tabIndicatorHeight">0dp</item>
+    </style>
+
 </resources>

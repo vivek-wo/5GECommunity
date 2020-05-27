@@ -7,6 +7,14 @@
     <string name="title_mine">我的</string>
 
 
+    <string name="tab_home_1">关注</string>
+    <string name="tab_home_2">推荐</string>
+    <string name="tab_home_3">剑网3</string>
+    <string name="tab_home_4">指尖江湖</string>
+    <string name="tab_home_5">指尖自走棋</string>
+    <string name="tab_home_6">圈子</string>
+
+
     <string name="search_edit_hint">剑网3</string>
 
     <string name="large_text">

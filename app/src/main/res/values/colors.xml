@@ -10,4 +10,6 @@
     <color name="colorDGStart">#503E64</color>
     <color name="colorDGCenter">#614D72</color>
     <color name="colorDGEnd">#715D80</color>
+
+    <color name="colorLWhite">#EEEEEE</color>
 </resources>
