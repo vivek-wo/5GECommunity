@@ -6,6 +6,9 @@
     <string name="title_discovery">发现</string>
     <string name="title_mine">我的</string>
 
+
+    <string name="search_edit_hint">剑网3</string>
+
     <string name="large_text">
         "Material is the metaphor.\n\n"
 

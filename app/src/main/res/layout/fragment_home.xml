@@ -6,35 +6,78 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_187"
+        android:background="@drawable/shape_home_gradient" />
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="180dp">
+        android:layout_height="@dimen/dp_104"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
-            android:minHeight="?actionBarSize"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            app:contentScrim="@android:color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
 
-            <ImageView
+            <androidx.appcompat.widget.Toolbar
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_launcher_background" />
+                android:layout_height="@dimen/dp_42"
+                app:layout_collapseMode="pin"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                app:contentInsetStart="0dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="?actionBarSize"
-                android:layout_gravity="bottom">
-
-                <TextView
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/design_default_color_on_secondary"
-                    android:text="ANANA" />
+                    android:layout_height="match_parent">
 
-            </LinearLayout>
+                    <Button
+                        android:layout_width="@dimen/dp_28"
+                        android:layout_height="@dimen/dp_28"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:background="@drawable/ic_search"
+                        android:alpha="0" />
+
+                    <EditText
+                        android:id="@+id/search_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_28"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:cursorVisible="false"
+                        android:paddingLeft="@dimen/dp_39"
+                        android:textColorHint="@color/colorWhite"
+                        android:hint="@string/search_edit_hint"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/shape_courior_edit_background" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_22"
+                        android:layout_height="@dimen/dp_22"
+                        android:src="@drawable/ic_search"
+                        app:layout_constraintLeft_toLeftOf="@id/search_edit"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginLeft="@dimen/dp_10" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_52"
+                app:layout_collapseMode="pin"
+                android:layout_gravity="bottom" />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
@@ -50,6 +93,5 @@
             android:text="@string/large_text" />
 
     </androidx.core.widget.NestedScrollView>
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
