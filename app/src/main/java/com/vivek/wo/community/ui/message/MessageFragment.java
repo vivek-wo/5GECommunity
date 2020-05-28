@@ -18,6 +18,7 @@ public class MessageFragment extends Fragment {
 
     private MessageViewModel messageViewModel;
 
+    @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         messageViewModel =

@@ -1,6 +1,8 @@
 <resources>
 
     <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
     <dimen name="dp_8">8dp</dimen>
     <dimen name="dp_10">10dp</dimen>
     <dimen name="dp_12">12dp</dimen>
@@ -13,11 +15,17 @@
     <dimen name="dp_48">48dp</dimen>
     <dimen name="dp_52">52dp</dimen>
 
-
+    <dimen name="dp_90">90dp</dimen>
+    <dimen name="dp_94">94dp</dimen>
     <dimen name="dp_97">97dp</dimen>
-    <dimen name="dp_94">104dp</dimen>
+
     <dimen name="dp_142">142dp</dimen>
 
     <dimen name="dp_187">187dp</dimen>
     <dimen name="dp_360">360dp</dimen>
+
+    <dimen name="sp_18">18.00000sp</dimen>
+    <dimen name="sp_20">20.00000sp</dimen>
+    <dimen name="sp_22">22.00000sp</dimen>
+    <dimen name="sp_24">24.00000sp</dimen>
 </resources>

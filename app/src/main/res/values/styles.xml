@@ -9,9 +9,14 @@
     </style>
 
     <style name="HomeTabStyle" parent="Widget.Design.TabLayout">
-        <item name="android:textColor">@color/colorHalfTWhite</item>
+        <item name="tabTextColor">@color/colorHalfTWhite</item>
         <item name="tabSelectedTextColor">@color/colorWhite</item>
         <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabTextAppearance">@style/tabTextAppearance</item>
+    </style>
+
+    <style name="tabTextAppearance" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">@dimen/sp_20</item>
     </style>
 
 </resources>
