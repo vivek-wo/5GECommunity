@@ -27,6 +27,7 @@ public class HomeFragment extends Fragment {
             R.string.tab_home_3, R.string.tab_home_4,
             R.string.tab_home_5, R.string.tab_home_6};
 
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -43,7 +44,7 @@ public class HomeFragment extends Fragment {
 
     private void initTab() {
         dataBinding.viewPager.setAdapter(new HomeFragmentPagerAdapter(getChildFragmentManager(),
-                FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT, defaultTabTitleRes));
+                FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT));
         dataBinding.tabLayout.setupWithViewPager(dataBinding.viewPager, false);
         for (int i = 0; i < defaultTabTitleRes.length; i++) {
             TabLayout.Tab tab = dataBinding.tabLayout.getTabAt(i);

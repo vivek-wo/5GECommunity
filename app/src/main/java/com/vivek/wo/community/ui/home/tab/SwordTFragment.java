@@ -1,4 +1,6 @@
 package com.vivek.wo.community.ui.home.tab;
 
-public class SwordTFragment {
+import androidx.fragment.app.Fragment;
+
+public class SwordTFragment extends Fragment {
 }

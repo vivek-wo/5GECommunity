@@ -15,6 +15,16 @@
     <string name="tab_home_6">圈子</string>
 
 
+    <string name="sword_u_notice">公告</string>
+    <string name="sword_u_tool">工具</string>
+    <string name="sword_u_sp">同人</string>
+    <string name="sword_u_vvt">炜炜说</string>
+
+    <string name="sword_tab_d">动态</string>
+    <string name="sword_tab_g">攻略</string>
+    <string name="sword_tl_reply">按回复</string>
+
+
     <string name="search_edit_hint">剑网3</string>
 
     <string name="large_text">
