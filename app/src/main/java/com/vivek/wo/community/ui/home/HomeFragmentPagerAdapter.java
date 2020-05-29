@@ -1,7 +1,6 @@
 package com.vivek.wo.community.ui.home;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -37,12 +36,7 @@ public class HomeFragmentPagerAdapter extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        return mFragmentList.get(position);
+        return new FingerTipFragment();
     }
 
-    @Nullable
-    @Override
-    public CharSequence getPageTitle(int position) {
-        return super.getPageTitle(position);
-    }
 }

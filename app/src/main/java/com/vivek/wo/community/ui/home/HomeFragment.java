@@ -59,6 +59,11 @@ public class HomeFragment extends Fragment {
             public void onTabSelected(TabLayout.Tab tab) {
                 tab.getCustomView().setScaleX(1.2f);
                 tab.getCustomView().setScaleY(1.2f);
+                if (tab.getPosition() == 0) {
+                    dataBinding.appBar.setExpanded(false);
+                } else {
+                    dataBinding.appBar.setExpanded(true);
+                }
             }
 
             @Override
