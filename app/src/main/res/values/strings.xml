@@ -20,9 +20,11 @@
     <string name="sword_u_sp">同人</string>
     <string name="sword_u_vvt">炜炜说</string>
 
-    <string name="sword_tab_d">动态</string>
-    <string name="sword_tab_g">攻略</string>
-    <string name="sword_tl_reply">按回复</string>
+    <string name="finger_quack_tab_d">动态</string>
+    <string name="finger_quack_tab_g">攻略</string>
+
+
+    <string name="right_reply">按回复</string>
 
 
     <string name="search_edit_hint">剑网3</string>

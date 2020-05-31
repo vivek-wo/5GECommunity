@@ -5,11 +5,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.vivek.wo.community.ui.home.tab.FingerQuackFragment;
 import com.vivek.wo.community.ui.home.tab.FingerTipFragment;
 import com.vivek.wo.community.ui.home.tab.FollowFragment;
 import com.vivek.wo.community.ui.home.tab.RecommendFragment;
 import com.vivek.wo.community.ui.home.tab.RingFragment;
-import com.vivek.wo.community.ui.home.tab.SwordQuackFragment;
 import com.vivek.wo.community.ui.home.tab.SwordTFragment;
 
 import java.util.ArrayList;
@@ -23,7 +23,7 @@ public class HomeFragmentPagerAdapter extends FragmentPagerAdapter {
         mFragmentList.add(new FollowFragment());
         mFragmentList.add(new RecommendFragment());
         mFragmentList.add(new SwordTFragment());
-        mFragmentList.add(new SwordQuackFragment());
+        mFragmentList.add(new FingerQuackFragment());
         mFragmentList.add(new FingerTipFragment());
         mFragmentList.add(new RingFragment());
     }
@@ -36,7 +36,7 @@ public class HomeFragmentPagerAdapter extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        return new FingerTipFragment();
+        return mFragmentList.get(position);
     }
 
 }
