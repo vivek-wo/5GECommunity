@@ -40,6 +40,7 @@
                         android:layout_height="match_parent">
 
                         <Button
+                            android:id="@+id/search_button"
                             android:layout_width="@dimen/dp_28"
                             android:layout_height="@dimen/dp_28"
                             android:alpha="0"
@@ -63,6 +64,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <ImageView
+                            android:id="@+id/search_edit_icon"
                             android:layout_width="@dimen/dp_22"
                             android:layout_height="@dimen/dp_22"
                             android:layout_marginLeft="@dimen/dp_10"

@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.tabs.TabLayout;
 import com.vivek.wo.community.R;
 import com.vivek.wo.community.databinding.FragmentHomeBinding;
@@ -81,5 +82,25 @@ public class HomeFragment extends Fragment {
                     }
                 });
         dataBinding.viewPager.setCurrentItem(3);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        dataBinding.appBar.addOnOffsetChangedListener(mOnOffsetChangedListener);
+    }
+
+    private AppBarLayout.OnOffsetChangedListener mOnOffsetChangedListener =
+            new AppBarLayout.OnOffsetChangedListener() {
+                @Override
+                public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
+
+                }
+            };
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        dataBinding.appBar.removeOnOffsetChangedListener(mOnOffsetChangedListener);
     }
 }
