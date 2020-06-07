@@ -23,6 +23,7 @@ import com.vivek.wo.community.ui.view.TouchSlopViewPager;
 public class HomeFragment extends Fragment {
     private FragmentHomeBinding dataBinding;
     private HomeViewModel homeViewModel;
+    private SharedViewModel sharedViewModel;
 
     private final int[] DEFAULT_TITLE_TABS = new int[]{
             R.string.tab_home_1, R.string.tab_home_2,
@@ -33,9 +34,15 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
         dataBinding = FragmentHomeBinding.inflate(inflater, container, false);
         return dataBinding.getRoot();
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        homeViewModel = new ViewModelProvider(requireActivity()).get(HomeViewModel.class);
+        sharedViewModel = new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
     }
 
     @Override

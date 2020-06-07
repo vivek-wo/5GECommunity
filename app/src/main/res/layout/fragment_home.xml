@@ -17,7 +17,7 @@
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/app_bar"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dp_104"
+            android:layout_height="@dimen/dp_94"
             app:elevation="0dp">
 
             <com.google.android.material.appbar.CollapsingToolbarLayout
@@ -55,7 +55,9 @@
                             android:layout_height="@dimen/dp_28"
                             android:background="@drawable/shape_courior_edit_background"
                             android:cursorVisible="false"
+                            android:focusable="false"
                             android:hint="@string/search_edit_hint"
+                            android:textSize="@dimen/sp_15"
                             android:paddingLeft="@dimen/dp_39"
                             android:textColor="@color/colorWhite"
                             android:textColorHint="@color/colorWhite"
@@ -65,8 +67,8 @@
 
                         <ImageView
                             android:id="@+id/search_edit_icon"
-                            android:layout_width="@dimen/dp_22"
-                            android:layout_height="@dimen/dp_22"
+                            android:layout_width="@dimen/dp_16"
+                            android:layout_height="@dimen/dp_16"
                             android:layout_marginLeft="@dimen/dp_10"
                             android:src="@drawable/ic_search"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -83,6 +85,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_52"
                     android:layout_gravity="bottom"
+                    app:tabGravity="center"
                     app:layout_collapseMode="pin"
                     app:tabMode="scrollable"
                     app:tabPadding="0dp"

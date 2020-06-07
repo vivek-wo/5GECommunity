@@ -3,7 +3,7 @@
     <dimen name="dp_16">16dp</dimen>
     <dimen name="dp_48">48dp</dimen>
     <dimen name="dp_56">56dp</dimen>
-    <dimen name="dp_104">104dp</dimen>
+    <dimen name="dp_94">94dp</dimen>
 
     <dimen name="dp_360">360dp</dimen>
 </resources>
