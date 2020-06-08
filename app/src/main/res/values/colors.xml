@@ -7,6 +7,11 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorHalfTWhite">#CCFFFFFF</color>
 
+    <color name="colorBlack">#000000</color>
+    <color name="colorL3Black">#333333</color>
+    <color name="colorL6Black">#666666</color>
+    <color name="colorL9Black">#999999</color>
+
     <color name="colorDGStart">#503E64</color>
     <color name="colorDGCenter">#614D72</color>
     <color name="colorDGEnd">#715D80</color>

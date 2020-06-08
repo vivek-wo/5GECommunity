@@ -28,7 +28,7 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
     @Override
     public DataViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         ItemLayoutMainBinding binding = ItemLayoutMainBinding.inflate(
-                LayoutInflater.from(parent.getContext()));
+                LayoutInflater.from(parent.getContext()), parent, false);
         return new DataViewHolder(binding);
     }
 
