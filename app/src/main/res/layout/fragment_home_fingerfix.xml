@@ -66,7 +66,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/dp_8"
                                 android:text="@string/sword_u_notice"
-                                android:textSize="@dimen/sp_16" />
+                                android:textColor="@color/colorLBlack"
+                                android:textSize="@dimen/sp_12" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -86,7 +87,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/dp_8"
                                 android:text="@string/sword_u_tool"
-                                android:textSize="@dimen/sp_16" />
+                                android:textColor="@color/colorLBlack"
+                                android:textSize="@dimen/sp_12" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -106,7 +108,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/dp_8"
                                 android:text="@string/sword_u_sp"
-                                android:textSize="@dimen/sp_16" />
+                                android:textColor="@color/colorLBlack"
+                                android:textSize="@dimen/sp_12" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -125,8 +128,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/dp_8"
+                                android:textColor="@color/colorLBlack"
                                 android:text="@string/sword_u_vvt"
-                                android:textSize="@dimen/sp_16" />
+                                android:textSize="@dimen/sp_12" />
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -143,6 +147,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        app:tabTextAppearance="@style/tabTextAppearance"
+                        app:tabTextColor="@color/color_second_tab_selected"
                         app:tabIndicatorFullWidth="false"
                         app:tabMode="scrollable" />
 
@@ -156,7 +162,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/right_reply"
-                            android:textSize="@dimen/sp_14" />
+                            android:textColor="@color/colorSECBlack"
+                            android:textSize="@dimen/sp_12" />
 
                         <ImageView
                             android:layout_width="@dimen/dp_12"

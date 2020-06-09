@@ -12,6 +12,7 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
 
     static class DataViewHolder extends RecyclerView.ViewHolder {
         private ItemLayoutMainBinding databinding;
+        private int iconSize;
 
         public ItemLayoutMainBinding getBinding() {
             return this.databinding;

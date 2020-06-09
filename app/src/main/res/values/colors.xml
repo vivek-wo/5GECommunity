@@ -8,13 +8,16 @@
     <color name="colorHalfTWhite">#CCFFFFFF</color>
 
     <color name="colorBlack">#000000</color>
-    <color name="colorL3Black">#333333</color>
-    <color name="colorL6Black">#666666</color>
-    <color name="colorL9Black">#999999</color>
+    <color name="colorLBlack">#808080</color>
+    <color name="colorSECBlack">#BABFBF</color>
 
     <color name="colorDGStart">#503E64</color>
     <color name="colorDGCenter">#614D72</color>
     <color name="colorDGEnd">#715D80</color>
+
+    <color name="colorGreen">#00D2B1</color>
+    <color name="colorLGreen">#F0FAF5</color>
+    <color name="colorLEGreen">#C4D8DC</color>
 
     <color name="colorLWhite">#EEEEEE</color>
 </resources>

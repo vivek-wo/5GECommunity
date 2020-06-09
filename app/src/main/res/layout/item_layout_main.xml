@@ -33,7 +33,7 @@
             android:id="@+id/item_icon"
             android:layout_width="@dimen/dp_14"
             android:layout_height="@dimen/dp_14"
-            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginLeft="@dimen/dp_5"
             app:layout_constraintBottom_toBottomOf="@id/item_title"
             app:layout_constraintLeft_toRightOf="@id/item_title"
             app:layout_constraintTop_toTopOf="@id/item_title" />
@@ -52,14 +52,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="@dimen/dp_8"
                 android:text="天幕"
-                android:textColor="@color/colorL9Black"
+                android:textColor="@color/colorSECBlack"
                 android:textSize="@dimen/sp_12" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="天幕器子"
-                android:textColor="@color/colorL9Black"
+                android:textColor="@color/colorSECBlack"
                 android:textSize="@dimen/sp_12" />
 
         </LinearLayout>
@@ -70,7 +70,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dp_16"
             android:text="发布了一篇文章"
-            android:textColor="@color/colorL3Black"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_14"
             app:layout_constraintTop_toBottomOf="@id/item_image" />
 
         <TextView
@@ -78,13 +79,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dp_8"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/shape_tips_background"
             android:paddingLeft="@dimen/dp_8"
             android:paddingTop="@dimen/dp_3"
             android:paddingRight="@dimen/dp_8"
             android:paddingBottom="@dimen/dp_3"
             android:text="# 指尖江湖"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/colorGreen"
             app:layout_constraintLeft_toLeftOf="@id/item_content"
             app:layout_constraintTop_toBottomOf="@id/item_content" />
 
@@ -95,7 +96,8 @@
             android:layout_marginTop="@dimen/dp_8"
             android:gravity="center_vertical"
             android:text="12小时前"
-            android:textColor="@color/colorL9Black"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/colorSECBlack"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintHorizontal_weight="4"
             app:layout_constraintEnd_toStartOf="@+id/item_reply"
@@ -107,8 +109,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:drawableLeft="@drawable/ic_discovery_black_24dp"
+            android:drawableLeft="@drawable/ic_reply_black_22dp"
             android:drawablePadding="@dimen/dp_3"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/colorSECBlack"
             android:text="0"
             app:layout_constraintHorizontal_weight="2"
             app:layout_constraintEnd_toStartOf="@+id/item_like"
@@ -121,9 +125,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:drawableLeft="@drawable/ic_discovery_black_24dp"
+            android:drawableLeft="@drawable/ic_like_black_22dp"
             android:drawablePadding="@dimen/dp_3"
             android:text="0"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/colorSECBlack"
             app:layout_constraintHorizontal_weight="2"
             app:layout_constraintTop_toTopOf="@+id/item_time"
             app:layout_constraintBottom_toBottomOf="@+id/item_time"
@@ -132,9 +138,9 @@
 
         <ImageView
             android:id="@+id/item_share"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_discovery_black_24dp"
+            android:background="@drawable/ic_share_black_22dp"
             app:layout_constraintHorizontal_weight="1"
             app:layout_constraintTop_toTopOf="@+id/item_time"
             app:layout_constraintBottom_toBottomOf="@+id/item_time"

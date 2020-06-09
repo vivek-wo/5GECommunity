@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:gravity="center"
-        android:textColor="@drawable/color_tab_selected"
+        android:textColor="@color/color_tab_selected"
         android:textSize="@dimen/sp_18" />
 
 </FrameLayout>
