@@ -97,11 +97,22 @@ public class HomeFragment extends Fragment {
         dataBinding.appBar.addOnOffsetChangedListener(mOnOffsetChangedListener);
     }
 
+    private void onOffsetLinked(int verticalOffset, int maxOffset) {
+        float alpha = (verticalOffset + maxOffset) / (float) maxOffset;
+        dataBinding.searchEdit.setAlpha(alpha);
+        dataBinding.searchEditIcon.setAlpha(alpha);
+        dataBinding.searchButton.setAlpha(1 - alpha);
+
+        float percent = 0.8f + 0.2f * alpha;
+        dataBinding.tabLayout.setScaleX(percent);
+        dataBinding.tabLayout.setScaleY(percent);
+    }
+
     private AppBarLayout.OnOffsetChangedListener mOnOffsetChangedListener =
             new AppBarLayout.OnOffsetChangedListener() {
                 @Override
                 public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
-
+                    onOffsetLinked(verticalOffset, appBarLayout.getTotalScrollRange());
                 }
             };
 
