@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">五戈社区</string>
+    <string name="app_name_nested">NestedSample</string>
 
     <string name="title_home">江湖</string>
     <string name="title_message">消息</string>
