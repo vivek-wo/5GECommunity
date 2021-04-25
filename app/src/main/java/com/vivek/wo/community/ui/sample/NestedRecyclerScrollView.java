@@ -16,10 +16,8 @@ import androidx.core.view.ViewCompat;
 
 public class NestedRecyclerScrollView extends LinearLayout
         implements NestedScrollingParent3, NestedScrollingChild3 {
-    private NestedScrollingParentHelper mParentHeler;
+    private NestedScrollingParentHelper mParentHelper;
     private NestedScrollingChildHelper mChildHelper;
-    private int mTargetMaxHeight;
-    private View mScrollTagetView;
 
     public NestedRecyclerScrollView(Context context) {
         super(context);
@@ -37,7 +35,7 @@ public class NestedRecyclerScrollView extends LinearLayout
     }
 
     private void init() {
-        mParentHeler = new NestedScrollingParentHelper(this);
+        mParentHelper = new NestedScrollingParentHelper(this);
         mChildHelper = new NestedScrollingChildHelper(this);
         mChildHelper.setNestedScrollingEnabled(true);
     }
@@ -45,12 +43,6 @@ public class NestedRecyclerScrollView extends LinearLayout
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
-        if (getChildCount() > 0) {
-            mScrollTagetView = getChildAt(0);
-            mScrollTagetView.getViewTreeObserver().addOnGlobalLayoutListener(() -> {
-                mTargetMaxHeight = mScrollTagetView.getMeasuredHeight();
-            });
-        }
     }
 
     @Override
@@ -65,13 +57,13 @@ public class NestedRecyclerScrollView extends LinearLayout
 
     @Override
     public void onNestedScrollAccepted(@NonNull View child, @NonNull View target, int axes, int type) {
-        mParentHeler.onNestedScrollAccepted(child, target, axes, type);
+        mParentHelper.onNestedScrollAccepted(child, target, axes, type);
         startNestedScroll(ViewCompat.SCROLL_AXIS_VERTICAL, type);
     }
 
     @Override
     public void onStopNestedScroll(@NonNull View target, int type) {
-        mParentHeler.onStopNestedScroll(target, type);
+        mParentHelper.onStopNestedScroll(target, type);
         stopNestedScroll(type);
     }
 
