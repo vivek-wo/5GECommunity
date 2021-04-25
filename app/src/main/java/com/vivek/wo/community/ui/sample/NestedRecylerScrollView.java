@@ -66,11 +66,13 @@ public class NestedRecylerScrollView extends LinearLayout
     @Override
     public void onNestedScrollAccepted(@NonNull View child, @NonNull View target, int axes, int type) {
         mParentHeler.onNestedScrollAccepted(child, target, axes, type);
+        startNestedScroll(ViewCompat.SCROLL_AXIS_VERTICAL, type);
     }
 
     @Override
     public void onStopNestedScroll(@NonNull View target, int type) {
         mParentHeler.onStopNestedScroll(target, type);
+        stopNestedScroll(type);
     }
 
     @Override
@@ -80,9 +82,8 @@ public class NestedRecylerScrollView extends LinearLayout
 
     @Override
     public void onNestedPreScroll(@NonNull View target, int dx, int dy, @NonNull int[] consumed, int type) {
-        Log.w("---------------", "------ onNestedPreScroll: dy:" + dy + ", consumed[1]:" + consumed[1]);
-        dispatchNestedScroll(0, 0, dy, 0, null, type, consumed);
-        Log.w("---------------", "------ dispatchNestedScroll: dy:" + dy + ", consumed[1]:" + consumed[1]);
+        boolean result = dispatchNestedPreScroll(dx, dy, consumed, null, type);
+        Log.w("----", "----: " + result);
     }
 
 
@@ -111,10 +112,7 @@ public class NestedRecylerScrollView extends LinearLayout
 
     @Override
     public boolean dispatchNestedScroll(int dxConsumed, int dyConsumed, int dxUnconsumed, int dyUnconsumed, @Nullable int[] offsetInWindow, int type) {
-        Log.w("---------------", "------ dispatchNestedScroll: dyConsumed:" + dyConsumed + ", dyUnconsumed:" + dyUnconsumed);
-        boolean result = mChildHelper.dispatchNestedScroll(dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed, offsetInWindow, type);
-        Log.w("---------------", "------ dispatchNestedScroll:result: " + result);
-        return result;
+        return mChildHelper.dispatchNestedScroll(dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed, offsetInWindow, type);
     }
 
     @Override
