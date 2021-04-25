@@ -8,7 +8,7 @@
         android:layout_height="match_parent"
         tools:context=".ui.home.HomeFragment">
 
-        <com.vivek.wo.community.ui.sample.NestedRecylerScrollView
+        <com.vivek.wo.community.ui.sample.NestedRecyclerScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -29,7 +29,7 @@
                 android:id="@+id/recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
-        </com.vivek.wo.community.ui.sample.NestedRecylerScrollView>
+        </com.vivek.wo.community.ui.sample.NestedRecyclerScrollView>
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/app_bar"

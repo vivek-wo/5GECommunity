@@ -14,24 +14,24 @@ import androidx.core.view.NestedScrollingParent3;
 import androidx.core.view.NestedScrollingParentHelper;
 import androidx.core.view.ViewCompat;
 
-public class NestedRecylerScrollView extends LinearLayout
+public class NestedRecyclerScrollView extends LinearLayout
         implements NestedScrollingParent3, NestedScrollingChild3 {
     private NestedScrollingParentHelper mParentHeler;
     private NestedScrollingChildHelper mChildHelper;
     private int mTargetMaxHeight;
     private View mScrollTagetView;
 
-    public NestedRecylerScrollView(Context context) {
+    public NestedRecyclerScrollView(Context context) {
         super(context);
         init();
     }
 
-    public NestedRecylerScrollView(Context context, @Nullable AttributeSet attrs) {
+    public NestedRecyclerScrollView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public NestedRecylerScrollView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public NestedRecyclerScrollView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
     }
